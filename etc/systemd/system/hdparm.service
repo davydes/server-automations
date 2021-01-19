@@ -1,0 +1,9 @@
+[Unit]
+Description=Configure disks standby and apm on startup
+
+[Service]
+Type=oneshot
+ExecStart=/opt/scripts/auto-hdparm.sh
+
+[Install]
+WantedBy=multi-user.target
